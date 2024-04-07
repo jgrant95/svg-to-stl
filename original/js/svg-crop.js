@@ -1060,7 +1060,7 @@ class SVGCrop {
 
             this.adjustToPrecision(precision);
 
-            if (this.options.wantBasePlate != null) {
+            if (this.options.wantBasePlate == 'true') {
                 postMessage(["progress", "addBasePlate"]);
                 this.addBasePlateInternal();
             }
